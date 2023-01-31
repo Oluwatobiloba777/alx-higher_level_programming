@@ -38,15 +38,15 @@ class Square:
         else:
             self.__size = value
 
-	def area(self):
+    def area(self):
         """
-            A function that calculates the area of a sqaure
-            Returns:
-                The area of the square
+        A function that calculates the area of a sqaure
+        returns:
+        area of the square
         """
         return self.__size ** 2
 
-	def my_print(self):
+    def my_print(self):
         """
         A function that prints # squares
         Returns:
