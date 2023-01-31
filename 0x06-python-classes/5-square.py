@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """
-A Square module
+A module containing the square class task 4
 """
 
 
 class Square:
-    """ A square class"""
+    """
+    A square class for the alx project
+    """
     def __init__(self, size=0):
         """
-        __init__ method initialize the class
-        attribute:
-        size: size of the square
+        Initialize the class
+        Args:
+            size: The size of the square
         """
         self.size = size
 
@@ -19,17 +21,18 @@ class Square:
         """
         A function for the square size
         Returns:
-            The size of the square
+            The size of the square (int)
         """
         return self.__size
 
     @size.setter
     def size(self, value):
         """
-        A function that sete the square size
+        A function to set the square size
+        Args:
             value: The new size of the square
         Returns:
-            null
+            Null void
         """
         if type(value) != int:
             raise TypeError("size must be an integer")
@@ -40,17 +43,17 @@ class Square:
 
     def area(self):
         """
-        A function that calculates the area of a sqaure
-        returns:
-        area of the square
+        A function to get the area of the square
+        Returns:
+            The area of the square (int)
         """
         return self.__size ** 2
 
     def my_print(self):
         """
-        A function that prints # squares
+        A function for printing '#' squares
         Returns:
-            null
+            Null Void
         """
         if self.__size == 0:
             print()
