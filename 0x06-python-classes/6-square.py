@@ -6,7 +6,7 @@ A Square module
 
 class Square:
     """ A square class"""
-    def __init__(self, size, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         __init__ method initialize the class
         attribute:
@@ -14,7 +14,7 @@ class Square:
         """
         self.size = size
         self.position = position
-	@property
+    @property
     def size(self):
         """
         A function of the square size
@@ -41,10 +41,9 @@ class Square:
     def position(self):
         return self.position
 
-        @position.setter
-        def position(self, value):
-            if type(value) != tuple \
-                    or value[0] < 0 \
+    @position.setter
+    def position(self, value):
+        if type(value) != tuple \or value[0] < 0 \
                     or value[1] < 0 \
                     or len(value) != 2:
                 raise TypeError("position must be a tuple of 2 positive integers")
@@ -73,4 +72,3 @@ class Square:
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
             print("")
-

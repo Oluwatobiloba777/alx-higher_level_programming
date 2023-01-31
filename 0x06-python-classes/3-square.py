@@ -6,7 +6,7 @@ A Square module
 
 class Square:
     """ A square class"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
         __init__ method initialize the class
         attribute:
@@ -18,6 +18,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
 	def area(self):
         """
             A function to calculate the area of a sqaure

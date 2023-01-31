@@ -6,14 +6,14 @@ A Square module
 
 class Square:
     """ A square class"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
         __init__ method initialize the class
         attribute:
         size: size of the square
         """
         self.size = size
-	@property
+    @property
     def size(self):
         """
         A function for the square size
