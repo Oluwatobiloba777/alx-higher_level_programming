@@ -1,0 +1,10 @@
+#!/usr/bin/pyhton3
+"""
+A Square module
+"""
+
+class Square:
+    """ A square class """
+    def __init__(self, size):
+        """ Initialize the class
+        
