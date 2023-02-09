@@ -1,0 +1,79 @@
+The ``1-my_list`` module
+======================
+
+Using ``print_sorted``
+-------------------
+
+Import the module and check docs
+    >>> m = __import__('1-my_list')
+    >>> len(m.__doc__) > 1
+    True
+
+Check class docs
+    >>> c = m.MyList
+    >>> len(c.__doc__) > 1
+    True
+
+Check function docs
+    >>> f = c.print_sorted
+    >>> len(f.__doc__) > 1
+    True
+
+Check function with list of +ves
+    >>> normal = c([2, 3, 1, 4])
+    >>> normal.print_sorted()
+    [1, 2, 3, 4]
+
+Check function with list of -ves
+    >>> normal = c([-2, -3, -1, -4])
+    >>> normal.print_sorted()
+    [-4, -3, -2, -1]
+
+Check function with empty list
+    >>> normal = c()
+    >>> normal.print_sorted()
+    []
+
+Check inheritance
+    >>> issubclass(c, list)
+    True
+
+Check __str__
+    >>> normal = c([1, 2, 3, 4, 5])
+    >>> print(normal)
+    [1, 2, 3, 4, 5]
+
+Check append()
+    >>> nl = c()
+    >>> nl.append(4)
+    >>> nl.append(10)
+    >>> nl.append(0)
+    >>> nl.append(11)
+    >>> nl.append(16)
+    >>> nl
+    [4, 10, 0, 11, 16]
+
+check print_sorted() with sorted append
+    >>> nl = c()
+    >>> nl.append(1)
+    >>> nl.append(2)
+    >>> nl.append(3)
+    >>> nl.append(4)
+    >>> nl.print_sorted()
+    [1, 2, 3, 4]
+
+check print_sorted() with not sorted append
+    >>> nl = c()
+    >>> nl.append(4)
+    >>> nl.append(2)
+    >>> nl.append(1)
+    >>> nl.append(3)
+    >>> nl.print_sorted()
+    [1, 2, 3, 4]
+
+check print_sorted() returns a new list
+    >>> nl = c([3, 2, 1, 4])
+    >>> newList = nl.print_sorted()
+    [1, 2, 3, 4]
+    >>> nl is newList
+    False
