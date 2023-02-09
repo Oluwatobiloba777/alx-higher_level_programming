@@ -10,7 +10,7 @@ class Rectangle(BaseGeometry):
     """
     a rectangle class
     """
-    def __init__(self):
+    def __init__(self, width, height):
         """
         instantiation of the rectangle class
         """
