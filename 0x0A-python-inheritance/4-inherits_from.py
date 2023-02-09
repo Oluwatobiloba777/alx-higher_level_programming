@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" inherit module """
+
 
 def inherits_from(obj, a_class):
     """
