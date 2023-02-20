@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" task 12 """
+
+
 def pascal_triangle(n):
+    """ pascal triangle functioon """
     if n <= 0:
         return []
 
