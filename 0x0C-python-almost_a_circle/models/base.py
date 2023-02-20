@@ -70,4 +70,4 @@ class Base:
             for elem in objs:
                 instances.append(cls.create(**elem))
 
-            return 
+            return instances
