@@ -1,6 +1,4 @@
 #!/usr/bin/node
-
-//A script thats prints x times C is fun using for loop
 const args = process.argv[2];
 const x = parseInt(args);
 if (!x){
