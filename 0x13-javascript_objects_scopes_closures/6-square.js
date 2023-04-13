@@ -7,6 +7,6 @@ module.exports = class Square extends Rectangle {
     }
 
     charPrint (c = 'X') {
-        super.print(char);
+        super.print(c);
     }
 };
